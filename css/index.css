@@ -353,13 +353,16 @@ display: block;
 .footer {
     background-color: var(--dark-bg-solid);
     padding:var(--spacing-68);
+    justify-content: space-between; /* Alineación horizontal */
+    align-items: flex-end;
+
 }
 
 .footer__copy {
     margin-top:  var(--spacing-36);
     text-align: center;
+    margin: 0;
 }
-
 
 /*ANIMATIONS*/
 @keyframes fade{
