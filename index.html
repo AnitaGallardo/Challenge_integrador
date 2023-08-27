@@ -10,23 +10,36 @@
 
 <body>
     <header>
-        <nav>
-            <picture>
-                <a href="./index.html"></a>
+        <nav class="navbar container">
+            <picture class="navbar__logo">
+                <a class="navbar__link" href="./index.html"></a>
                 <img src="/img/branding/logo_light_horizontal.svg" alt="Isologotipo de la Marca Funkoshop">
             </picture>
-            <ul>
-                <li>
-                    <a href="./pages/shop.html">SHOP</a>
+            <ul class="navbar__menu">
+                <li class="navbar__item with-submenu" >
+                    <a  class="navbar__link with-icon" href="./pages/shop.html">SHOP <iconify-icon icon="ion:chevron-down"></iconify-icon></a>
+
+                    <ul class="submenu">
+                        <li class="submenu__item">
+                            <a href="" class="submenu__link">Funkos</a>
+                        </li>
+                        <li class="submenu__item">
+                            <a href="" class="submenu__link">Remeras</a>
+                        </li>
+                        <li class="submenu__item">
+                            <a href="" class="submenu__link">Llaveros</a>
+                        </li>
+
+                    </ul>
                 </li>
-                <li>
-                    <a href="./pagescontact.html/">CONTACTO</a>
+                <li class="navbar__item">
+                    <a  class="navbar__link" href="./pagescontact.html/">CONTACTO</a>
                 </li>
-                <li>
-                    <a href="./pages/login.html">LOGIN</a>
+                <li class="navbar__item">
+                    <a  class="navbar__link" href="./pages/login.html">LOGIN</a>
                 </li>
-                <li>
-                    <a href="./pages/cart.html">Carrito
+                <li class="navbar__item">
+                    <a  class="navbar__cart" href="./pages/cart.html">
                         <img src="./img/icons/cart-icon.svg" alt="Icono de Carrito">
                     </a>
                 </li>
@@ -142,6 +155,7 @@
         </section>
         <p>All rights reserved 2023 - Funkoshop &copy;</p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
 </body>
 
 </html>
