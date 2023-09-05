@@ -3,9 +3,162 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Shop| Funkoshop</title>
+    <link rel="stylesheet" href="css\shop.css">
 </head>
-<body>
+<header>
+    <nav class="navbar container">
+        <picture class="navbar__logo">
+            <a class="navbar__link" href="./index.html"></a>
+            <img src="/img/funkos-banner.webp" alt="Isologotipo de la Marca Funkoshop">
+<body>            </picture>
+    <ul class="navbar__menu">
+        <li class="navbar__item with-submenu" >
+            <a  class="navbar__link with-icon" href="./pages/shop.html">SHOP <iconify-icon icon="ion:chevron-down"></iconify-icon></a>
+
+            <ul class="submenu">
+                <li class="submenu__item">
+                    <a href="" class="submenu__link">Funkos</a>
+                </li>
+                <li class="submenu__item">
+                    <a href="" class="submenu__link">Remeras</a>
+                </li>
+                <li class="submenu__item">
+                    <a href="" class="submenu__link">Llaveros</a>
+                </li>
+
+            </ul>
+        </li>
+        <li class="navbar__item">
+            <a  class="navbar__link" href="./pagescontact.html/">CONTACTO</a>
+        </li>
+        <li class="navbar__item">
+            <a  class="navbar__link" href="./pages/login.html">LOGIN</a>
+        </li>
+        <li class="navbar__item">
+            <a  class="navbar__cart" href="./pages/cart.html">
+                <img src="./img/icons/cart-icon.svg" alt="Icono de Carrito">
+            </a>
+        </li>
+    </ul>
     
+</nav>
+</header>
+<table>
+    <thead>   
+        <th>
+            <form>
+            <legend>Buscar</legend>
+    <input id="buscador" type ="text" name="item o categoria" placeholder="item o categoria"  value="" ></input>
+    <legend>Ordenar por</legend>
+    <select name="Ordenar por">
+        <option value="menor a mayor">menor a mayor</option>
+        <option value=" mayor a menor"> mayor a menor</option>
+    </select>
+    <div>
+    <legend>Precio</legend>
+    <label for ="precioMin"> min</label>
+    <input  id= "precioMin"  type="number" name="minimo" placeholder="0" value="" > </input>
+    <label for=" precioMax">max</label>
+    <input  id= "precioMax" type="number" name="maximo" placeholder="0" value=""></input>
+    </div>
+    <legend>Filtrar</legend>
+    <input id="nuevos" type="checkbox" name="nuevos" < label for ="nuevos"> NUEVOS </label> </input>
+    <input id="Ofertas" type="checkbox" name="ofertas" < label for ="ofertas"> OFERTAS </label> </input>
+    <input id="edicion especial" type="checkbox" name="edicion especial" < label for ="edicion especial"> EDICIÓN ESPECIAL </label> </input>
+    <input id="favoritos" type="checkbox" name="favoritos" < label for ="favoritos"> FAVORITOS </label> </input>
+        </th> 
+        <th>       
+        <article class="collection__content">
+        <img src="../img/star-wars/trooper-1.webp"
+        <h2 class="collection__title"> Star Wars</h2>
+        <h3> Stormtrooper lightsaber</h3>
+        <h4> $1799,99</h4>
+        <H5>3 Cuotas sin interes</H5>
+    </article>
+    </th>  
+    <th>       
+        <article class="collection__content">
+        <img src="../img/pokemon/pidgeotto-1.webp"
+        <h2 class="collection__title"> Pokemon</h2>
+        <h3> Pidgeotto</h3>
+        <h4> $1799,99</h4>
+        <h5> 3 cuotas sin interes</h5>
+    </article>
+    </th>  
+    <th>       
+        <article class="collection__content">
+        <img src="../img/harry-potter/luna-1.webp"
+        <h2 class="collection__title"> Harry Potter</h2>
+        <h3> Luna lovegood lion mask</h3>
+        <h4> $1799,99</h4>
+        <h5> 3 cuotas sin interes</h5>
+    </article>
+    </th>   
+    </thead>
+    <tbody>
+<tr>
+    <td>
+    </td>
+    <td>       
+        <article class="collection__content">
+        <img src="../img/star-wars/trooper-1.webp"
+        <h2 class="collection__title"> Star Wars</h2>
+        <h3> Stormtrooper lightsaber</h3>
+        <h4> $1799,99</h4>
+        <H5>3 Cuotas sin interes</H5>
+    </article>
+    </td>  
+    <td>       
+        <article class="collection__content">
+        <img src="../img/pokemon/pidgeotto-1.webp"
+        <h2 class="collection__title"> Pokemon</h2>
+        <h3> Pidgeotto</h3>
+        <h4> $1799,99</h4>
+        <h5> 3 cuotas sin interes</h5>
+    </article>
+    </td>  
+    <td>       
+        <article class="collection__content">
+        <img src="../img/harry-potter/luna-1.webp"
+        <h2 class="collection__title"> Harry Potter</h2>
+        <h3> Luna lovegood lion mask</h3>
+        <h4> $1799,99</h4>
+        <h5> 3 cuotas sin interes</h5>
+    </article>
+    </td>   
+</tr>
+    </tbody>
+    <tfoot>
+        <td></td>
+        <td>       
+            <article class="collection__content">
+            <img src="../img/star-wars/trooper-1.webp"
+            <h2 class="collection__title"> Star Wars</h2>
+            <h3> Stormtrooper lightsaber</h3>
+            <h4> $1799,99</h4>
+            <H5>3 Cuotas sin interes</H5>
+        </article>
+        </td>  
+        <td>       
+            <article class="collection__content">
+            <img src="../img/pokemon/pidgeotto-1.webp"
+            <h2 class="collection__title"> Pokemon</h2>
+            <h3> Pidgeotto</h3>
+            <h4> $1799,99</h4>
+            <h5> 3 cuotas sin interes</h5>
+        </article>
+        </td>  
+        <td>       
+            <article class="collection__content">
+            <img src="../img/harry-potter/luna-1.webp"
+            <h2 class="collection__title"> Harry Potter</h2>
+            <h3> Luna lovegood lion mask</h3>
+            <h4> $1799,99</h4>
+            <h5> 3 cuotas sin interes</h5>
+        </article>
+        </td>   
+    </tfoot>
+</table>
 </body>
 </html>
