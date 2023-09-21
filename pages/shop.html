@@ -4,14 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shop| Funkoshop</title>
-    <link rel="stylesheet" href="css\shop.css">
-</head>
+    <link rel="stylesheet" href="../css/shop.css">
 <header>
-    <nav class="navbar container">
-        <picture class="navbar__logo">
-            <a class="navbar__link" href="./index.html"></a>
-            <img src="/img/funkos-banner.webp" alt="Isologotipo de la Marca Funkoshop">
-<body>            </picture>
+    <nav class="navbar container">  
+        <picture class="navbar_logo">
+        <img src="../img/branding/logo_light_horizontal.svg" alt="Icono de funkos"> 
+    </picture>
+<body>            
     <ul class="navbar__menu">
         <li class="navbar__item with-submenu" >
             <a  class="navbar__link with-icon" href="./pages/shop.html">SHOP <iconify-icon icon="ion:chevron-down"></iconify-icon></a>
@@ -26,7 +25,6 @@
                 <li class="submenu__item">
                     <a href="" class="submenu__link">Llaveros</a>
                 </li>
-
             </ul>
         </li>
         <li class="navbar__item">
@@ -36,129 +34,149 @@
             <a  class="navbar__link" href="./pages/login.html">LOGIN</a>
         </li>
         <li class="navbar__item">
-            <a  class="navbar__cart" href="./pages/cart.html">
-                <img src="./img/icons/cart-icon.svg" alt="Icono de Carrito">
-            </a>
         </li>
     </ul>
-    
 </nav>
 </header>
-<table>
-    <thead>   
-        <th>
-            <form>
-            <legend>Buscar</legend>
-    <input id="buscador" type ="text" name="item o categoria" placeholder="item o categoria"  value="" ></input>
-    <legend>Ordenar por</legend>
-    <select name="Ordenar por">
-        <option value="menor a mayor">menor a mayor</option>
-        <option value=" mayor a menor"> mayor a menor</option>
-    </select>
-    <div>
-    <legend>Precio</legend>
-    <label for ="precioMin"> min</label>
-    <input  id= "precioMin"  type="number" name="minimo" placeholder="0" value="" > </input>
-    <label for=" precioMax">max</label>
-    <input  id= "precioMax" type="number" name="maximo" placeholder="0" value=""></input>
-    </div>
-    <legend>Filtrar</legend>
-    <input id="nuevos" type="checkbox" name="nuevos" < label for ="nuevos"> NUEVOS </label> </input>
-    <input id="Ofertas" type="checkbox" name="ofertas" < label for ="ofertas"> OFERTAS </label> </input>
-    <input id="edicion especial" type="checkbox" name="edicion especial" < label for ="edicion especial"> EDICIÓN ESPECIAL </label> </input>
-    <input id="favoritos" type="checkbox" name="favoritos" < label for ="favoritos"> FAVORITOS </label> </input>
-        </th> 
-        <th>       
-        <article class="collection__content">
-        <img src="../img/star-wars/trooper-1.webp"
+<main class="main_container">
+<div class="buttons">   
+                <form class="botones">
+                <legend>Buscar</legend>
+        <input id="buscador" type ="text" name="item o categoria" placeholder="item o categoria"  value="" ></input>
+       </form>form>
+        <legend>Ordenar por</legend>
+        <select name="Ordenar por">
+            <option value="menor a mayor">menor a mayor</option>
+            <option value=" mayor a menor"> mayor a menor</option>
+        </select>
+        <div>
+        <legend>Precio</legend>
+        <label for ="precioMin"> min</label>
+        <input  id= "precioMin"  type="number" name="minimo" placeholder="0" value="" > </input>
+        <label for=" precioMax">max</label>
+        <input  id= "precioMax" type="number" name="maximo" placeholder="0" value=""></input>
+        </div>
+        <legend>Filtrar</legend>
+        <input id="nuevos" type="checkbox" name="nuevos" < label for ="nuevos"> NUEVOS </label> </input>
+        <input id="Ofertas" type="checkbox" name="ofertas" < label for ="ofertas"> OFERTAS </label> </input>
+        <input id="edicion especial" type="checkbox" name="edicion especial" < label for ="edicion especial"> EDICIÓN ESPECIAL </label> </input>
+        <input id="favoritos" type="checkbox" name="favoritos" < label for ="favoritos"> FAVORITOS </label> </input> 
+</div>
+<div>
+    <article class="collection">
+        <span class="collection_tag">NUEVO</span>
+        <img src="../img/star-wars/trooper-1.webp" >
         <h2 class="collection__title"> Star Wars</h2>
         <h3> Stormtrooper lightsaber</h3>
         <h4> $1799,99</h4>
         <H5>3 Cuotas sin interes</H5>
-    </article>
-    </th>  
-    <th>       
-        <article class="collection__content">
-        <img src="../img/pokemon/pidgeotto-1.webp"
+</div>
+<div>
+    <article class="collection__content">
+        <span class="collection_tag">Nuevo</span>
+        <img src="../img/pokemon/pidgeotto-1.webp">
         <h2 class="collection__title"> Pokemon</h2>
         <h3> Pidgeotto</h3>
         <h4> $1799,99</h4>
         <h5> 3 cuotas sin interes</h5>
-    </article>
-    </th>  
-    <th>       
-        <article class="collection__content">
-        <img src="../img/harry-potter/luna-1.webp"
-        <h2 class="collection__title"> Harry Potter</h2>
-        <h3> Luna lovegood lion mask</h3>
-        <h4> $1799,99</h4>
-        <h5> 3 cuotas sin interes</h5>
-    </article>
-    </th>   
-    </thead>
-    <tbody>
-<tr>
-    <td>
-    </td>
-    <td>       
-        <article class="collection__content">
-        <img src="../img/star-wars/trooper-1.webp"
+</article>
+</div>
+<div>
+    <article class="collection">
+        <span class="collection_tag">Nuevo</span>
+    <img src="../img/harry-potter/luna-1.webp">
+    <h2 class="collection__title"> Harry Potter</h2><h1>Nuevo</h1>
+    <h3> Luna lovegood lion mask</h3>
+    <h4> $1799,99</h4>
+    <h5> 3 cuotas sin interes</h5>
+</article>
+</div>
+<div></div>
+<div>
+    <article class="collection">
+        <span class="collection_tag">Nuevo</span>
+        <img src="../img/star-wars/trooper-1.webp" >
         <h2 class="collection__title"> Star Wars</h2>
         <h3> Stormtrooper lightsaber</h3>
         <h4> $1799,99</h4>
         <H5>3 Cuotas sin interes</H5>
-    </article>
-    </td>  
-    <td>       
-        <article class="collection__content">
-        <img src="../img/pokemon/pidgeotto-1.webp"
+</div>
+<div>
+    <article class="collection__content">
+        <span class="collection_tag">Nuevo</span>
+        <img src="../img/pokemon/pidgeotto-1.webp">
         <h2 class="collection__title"> Pokemon</h2>
         <h3> Pidgeotto</h3>
         <h4> $1799,99</h4>
         <h5> 3 cuotas sin interes</h5>
-    </article>
-    </td>  
-    <td>       
-        <article class="collection__content">
-        <img src="../img/harry-potter/luna-1.webp"
-        <h2 class="collection__title"> Harry Potter</h2>
-        <h3> Luna lovegood lion mask</h3>
+</article>
+</div>
+<div>
+    <article class="collection">
+        <span class="collection_tag">Nuevo</span>
+    <img src="../img/harry-potter/luna-1.webp">
+    <h2 class="collection__title"> Harry Potter</h2><h1>Nuevo</h1>
+    <h3> Luna lovegood lion mask</h3>
+    <h4> $1799,99</h4>
+    <h5> 3 cuotas sin interes</h5>
+</article>
+</div>
+<div> </div>
+<div>
+    <article class="collection">
+        <span class="collection_tag">Nuevo</span>
+        <img src="../img/star-wars/trooper-1.webp" >
+        <h2 class="collection__title"> Star Wars</h2>
+        <h3> Stormtrooper lightsaber</h3>
+        <h4> $1799,99</h4>
+        <H5>3 Cuotas sin interes</H5>
+</div>
+<div>
+    <article class="collection__content">
+        <span class="collection_tag">Nuevo</span>
+        <img src="../img/pokemon/pidgeotto-1.webp">
+        <h2 class="collection__title"> Pokemon</h2>
+        <h3> Pidgeotto</h3>
         <h4> $1799,99</h4>
         <h5> 3 cuotas sin interes</h5>
-    </article>
-    </td>   
-</tr>
-    </tbody>
-    <tfoot>
-        <td></td>
-        <td>       
-            <article class="collection__content">
-            <img src="../img/star-wars/trooper-1.webp"
-            <h2 class="collection__title"> Star Wars</h2>
-            <h3> Stormtrooper lightsaber</h3>
-            <h4> $1799,99</h4>
-            <H5>3 Cuotas sin interes</H5>
-        </article>
-        </td>  
-        <td>       
-            <article class="collection__content">
-            <img src="../img/pokemon/pidgeotto-1.webp"
-            <h2 class="collection__title"> Pokemon</h2>
-            <h3> Pidgeotto</h3>
-            <h4> $1799,99</h4>
-            <h5> 3 cuotas sin interes</h5>
-        </article>
-        </td>  
-        <td>       
-            <article class="collection__content">
-            <img src="../img/harry-potter/luna-1.webp"
-            <h2 class="collection__title"> Harry Potter</h2>
-            <h3> Luna lovegood lion mask</h3>
-            <h4> $1799,99</h4>
-            <h5> 3 cuotas sin interes</h5>
-        </article>
-        </td>   
-    </tfoot>
-</table>
+</article>
+</div>
+<div>
+    <article class="collection">
+        <span class="collection_tag">Nuevo</span>
+    <img src="../img/harry-potter/luna-1.webp">
+    <h2 class="collection__title"> Harry Potter</h2><h1>Nuevo</h1>
+    <h3> Luna lovegood lion mask</h3>
+    <h4> $1799,99</h4>
+    <h5> 3 cuotas sin interes</h5>
+</article>
+</div>
+</main>
 </body>
+<footer class="footer">
+    <nav class="navbar container">
+      <ul class="navbar__item">
+        <li class="navbar__item">
+          <a class="navbar__link" href="./pages/shop.html">SHOP</a>
+        </li>
+        <li class="navbar__item">
+          <a class="navbar__link" href="./pages/login.html">INGRESAR</a>
+        </li>
+        <li class="navbar__item">
+          <a class="navbar__link" href="./pages/contact.html">CONTACTO</a>
+        </li>
+      </ul>
+      <picture>
+        <img src="../img/branding/isotype.svg" alt="Isotipo de la Marca Funkoshop">
+      </picture>
+    </nav>
+    <p class="footer__copy"> All rights reserved 2023 - Funkoshop &copy; </p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+  <script src="./js/glide.js"> </script>
+</body>
+
+
 </html>
