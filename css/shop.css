@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2? family= Inter:wght@300 & family= Raleway:wght@300 & display=swap');
 
 :root {
@@ -12,7 +11,6 @@
     --secondary-500: rgb(29,132,181,0.5);
     --secondary-300: rgb(29,132,181,0.3);
 
-   
     --dark-solid:#1F1F1F; 
     --dark-900: rgb(31,31,31,0.9);
     --dark-500: rgb(31,31,31,0.5);
@@ -65,6 +63,7 @@ html{
     font-family:var(--base-font);
     font-size: 62.5%;
     color: var(--dark-solid);
+    line-height: 1.5;
 }
 
 a{
@@ -179,10 +178,15 @@ display: block;
         border: 8px solid red;
         }
 
-.collection{
+.card_collection{
     position:relative;
 }
-    .collection_tag {
+
+.card-item__cover{
+    display: flex;
+    position: relative;
+}
+    .card_collection_tag {
         font-size: x-small;
         text-transform:uppercase;
         background-color:var(--primary-solid);
@@ -190,6 +194,48 @@ display: block;
         padding: var(--spacing-8) var(--spacing-12);
         position: absolute;
         right: 0;
+    }
+    
+    .card_item__content {
+        display: flex;
+        flex-direction: column;
+        gap: var(--spacing-12);
+        padding: var(--spacing-16);
+    }
+    .card-item__cover img{
+        animation: fade .7s;
+    }
+    
+    .card-item__img--back{
+        display: none;
+    }
+    
+    .card-item__cover:hover .card-item__img--back{
+    display: block;
+    }
+    
+    .card-item__cover:hover .card-item__img--front{
+        display: none
+        }
+    
+    .card-item__licence {
+        font-size: var(--font-xsmall);
+        font-weight: 500;
+    }
+    
+    .card-item__name {
+        font-size: var(--font-medium);
+        font-weight: 700;
+    }
+    
+    .card-item__price {
+        font-size: var(--font-small);
+    }    
+    
+    .card-item__promo {
+        font-size: var(--font-xsmall);
+        color: var(--secondary-solid);
+        font-weight: 700;
     }
     
     
