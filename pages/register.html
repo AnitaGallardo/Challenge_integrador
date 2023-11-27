@@ -1,11 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="../css/index.css">
 </head>
+
 <body>
-    
+    <header>
+        <nav class="navbar container">
+            <picture class="navbar__logo">
+                <a class="navbar__link" href="./index.html"></a>
+                <img src="../img/branding/logo_light_horizontal.svg" alt="Isologotipo de la Marca Funkoshop">
+            </picture>
+            <ul class="navbar__menu">
+                <li class="navbar__item with-submenu">
+                    <a class="navbar__link with-icon" href="./pages/shop.html">VER TIENDA<iconify-icon
+                            icon="ion:chevron-down"></iconify-icon></a>
+
+                    <!-- <ul class="submenu">
+                        <li class="submenu__item">
+                            <a href="" class="submenu__link">Funkos</a>
+                        </li>
+                        <li class="submenu__item">
+                            <a href="" class="submenu__link">Remeras</a>
+                        </li>
+                        <li class="submenu__item">
+                            <a href="" class="submenu__link">Llaveros</a>
+                        </li>
+
+                    </ul> -->
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="./pagescontact.html/">ADMIN</a>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="./pages/login.html">SALIR</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="formulario-a">
+
+            <h1 class="titulo">CREA TU CUENTA</h1>
+            <h2 class="subtitulo">Completa el formulario para ser parte del mundo de los Funkos</h2>
+
+            <div class="datos">
+                <p>Nombre:
+                    <input class="subform-a" type="text" name="nombre" id="nombre" placeholder="John">
+                </p>
+                <p>Apellido:
+                    <input class="subform-a" type="text" name="apellido" id="apellido" placeholder="Doe">
+                </p>
+                <p>Email:
+                    <input class="subform-b" type="email" name="email" id="email" placeholder="Johndoe@correo.com">
+                </p>
+                <p>Contraseña:
+                    <input class="subform-c" type="password" name="contraseña" id="contraseña" placeholder=".........">
+                </p>
+                <p>Repita Contraseña:
+                    <input class="subform-d" type="password" name="repita contraseña" id="repita contraseña"
+                        placeholder=".........">
+                </p>
+            </div>
+
+            <div class="condiciones">
+                <input class="boton" type="submit" value="Registrar">
+                <input type="checkbox" name="item1"><span>Acepto</span> <a href="#">Términos y Condiciones</a>
+            </div>
+
+        </section>
+
+
+    </main>
+    <footer class="footer">
+        <nav class="navbar container">
+            <ul class="navbar__item">
+                <li class="navbar__item">
+                    <a class="navbar__link" href="./pages/shop.html">SHOP</a>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="./pages/login.html">REGISTRARSE</a>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="./pages/login.html">INGRESAR</a>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="./pages/contact.html">CONTACTO</a>
+                </li>
+            </ul>
+            <picture>
+                <img src="../img/branding/isotype.svg" alt="Isotipo de la Marca Funkoshop">
+            </picture>
+        </nav>
+        <p class="footer__copy"> All rights reserved 2023 - Funkoshop & copy; </p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+    <script src="./js/glide.js"> </script>
 </body>
+
 </html>
