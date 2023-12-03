@@ -5,4 +5,4 @@ const quantity = document.querySelector('#quantity');
 console.log(add, subtract, quantity);
 
 add.addEventListener('click', () => quantity.value = Number(quantity.value) +1 );
-subtract.addEventListener('click', () => quantity.value = Number(quantity.value) -1 );
+subtract.addEventListener('click', () => quantity.value = Number(quantity.value) > 0 ? Number(quantity.value) -1 : 0 );
