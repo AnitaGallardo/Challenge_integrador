@@ -72,7 +72,7 @@ a{
     color: inherit;
 }
 
-header{
+header, footer{
     font-family: var(--alternative-font);
     color: var(--light-font-solid);
 }
