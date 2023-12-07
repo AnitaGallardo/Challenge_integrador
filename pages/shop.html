@@ -39,7 +39,7 @@
 </nav>
 </header>
 <main class="main_container">
-<div class="buttons">   
+<div class="buttons container">   
                 <form class="botones">
                 <legend>Buscar</legend>
         <input id="buscador" type ="text" name="item o categoria" placeholder="item o categoria"  value="" ></input>
@@ -62,7 +62,7 @@
         <input id="edicion especial" type="checkbox" name="edicion especial" < label for ="edicion especial"> EDICIÓN ESPECIAL </label> </input>
         <input id="favoritos" type="checkbox" name="favoritos" < label for ="favoritos"> FAVORITOS </label> </input> 
 </div>
-<div class="card_item__content">
+<div class="card_item__container">
     <article class="card_collection">
         <span class="card_collection_tag">NUEVO</span>
         <picture class="card-item__cover">
@@ -182,14 +182,26 @@
     <p class=" card-item__promo">3 CUOTAS SIN INTERÉS</p>
 </article>
 </div>
+<div class="pagination">
+    <button class="prev">&lt;</button>
+    <button class="page">1</button>
+    <button class="page">2</button>
+    <button class="span">...</button>
+    <button class="page">9</button>
+    <button class="page">10</button>
+    <button class="next">&gt;</button>
+  </div>
 
 </main>
-</body>
+
 <footer class="footer">
     <nav class="navbar container">
       <ul class="navbar__item">
         <li class="navbar__item">
           <a class="navbar__link" href="./pages/shop.html">SHOP</a>
+        </li>
+        <li class="navbar__item">
+          <a class="navbar__link" href="./pages/login.html">REGISTRARSE</a>
         </li>
         <li class="navbar__item">
           <a class="navbar__link" href="./pages/login.html">INGRESAR</a>
@@ -202,13 +214,14 @@
         <img src="../img/branding/isotype.svg" alt="Isotipo de la Marca Funkoshop">
       </picture>
     </nav>
-    <p class="footer__copy"> All rights reserved 2023 - Funkoshop &copy; </p>
+    <p class="footer__copy"> All rights reserved 2023 - Funkoshop & copy; </p>
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
-  <script src="./js/glide.js"> </script>
-</body>
+  <script src="../js/glide.js"> </script>
+  <script src="../js/carrito.js"></script>
 
+</body>
 
 </html>
